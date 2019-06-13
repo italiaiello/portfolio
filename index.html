@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Site</title>
+    <link rel="shortcut icon" type="image/png" href="Icons/favicon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<header>
+    <div id="overlay">
+        <figure id="profilePic">
+            <img src="Images/Asset%203.png" alt="Picture of me in front of a plant" />
+        </figure>
+        <h1>Hi, I'm Andrew.<br/>Welcome to my site!</h1>
+    </div>
+</header>
+<body>
+    <section id="aboutSection">
+        <h2 class="sectionHeading">About Me</h2>
+        <article id="aboutContainer">
+            <div class="details">
+                <figure id="ball">
+                    <img src="Icons/Ball2.svg" alt="Soccer Ball Icon"/>
+                </figure>
+                <p>Soccer Player</p>
+            </div>
+            <div class="details">
+                <figure>
+                    <img src="Icons/GraduationCap.png" alt="Graduation Cap Icon"/>
+                </figure>
+                <p>Studying Design Computing</p>
+            </div>
+            <div class="details">
+                <figure>
+                    <img src="Icons/Book2.svg" alt="Book Icon"/>
+                </figure>
+                <p>Love a Good Read</p>
+            </div>
+        </article>
+    </section>
+   
+    <section id="projects" class="overlaySection">
+       
+        <h2 id="projectsHeading" class="sectionHeading">Projects</h2>
+        <section id="projectSection">
+           <div id="overlaySection">
+               <p id="instructions">Hover over the images to learn more</p>
+               <article id="projectContainer">
+                    <article class="project">
+                        <figure class="projectImage desc">
+                            <img src="Images/smart_brain.png" alt="Smart brain app detecting faces in a team photo"/>
+                            <div class="insideDesc">
+                                <h3>Smart Brain</h3>
+                                <p>
+                                    Paste the link of an image into the detection box, and the app will detect the faces in the image.
+                                    <br /><br />
+                                    Made using the Clarifai Face Recognition API, React.js, Node.js, Redis and Docker.
+                                    <br /><br />
+                                    <a href="https://github.com/italiaiello/smart-brain" target="_blank">Try it for yourself!</a>
+                                    <br /><br />
+                                    Make sure to download the <a href="https://github.com/italiaiello/smart-brain-api-1" target="_blank">backend repository</a> too.
+                                </p>
+                            </div>
+                        </figure>
+                    </article>
+                    <article class="project">
+                        <figure class="projectImage desc">
+                            <img src="Images/football_round_up.png" alt="Football Round-Up start screen"/>
+                            <div class="insideDesc">
+                                <h3>Football Round-Up</h3>
+                                <p>
+                                    Find up to date details about leagues and clubs from around the world!
+                                    <br /><br />
+                                    Made using the SportsDB API, React.js and Node.js.
+                                    <br /><br />
+                                    <a href="https://github.com/italiaiello/football-round-up" target="_blank">Try it for yourself!</a>
+                                    <br /><br />
+                                    Make sure to download the <a href="https://github.com/italiaiello/football-round-up-api" target="_blank">backend repository</a> too.
+                                </p>
+                            </div>
+                        </figure>
+                    </article>
+                   </article>
+               </div>
+        </section>
+    </section>
+    
+    <section id="Resume">
+       <h2 class="sectionHeading">Resume</h2>
+        <article>
+            <a href="https://drive.google.com/file/d/1lL3GNtQklSrknsNCosehlvsdGYGCPzVP/view" target="_blank"><button id="viewResume">View Resume</button></a>
+            <figure id="logo">
+                <img src="Icons/Logo.svg" alt="Logo which resembles the letter A"/>
+            </figure>  
+        </article>
+    </section>
+    <footer>
+        <figure>
+            <a href="https://github.com/italiaiello" target="_blank"><img src="Icons/github.svg" alt="Github Logo" /></a>
+        </figure>
+        <figure>
+            <a href="https://www.linkedin.com/in/andrew-aiello-9aa21417a/" target="_blank"><img src="Icons/linkedin.svg" alt="Linkedin Logo" /></a>
+        </figure>
+    </footer>
+</body>
+</html>
+
+<!--
+<section id="projectSection">
+           <div id="overlaySection">
+-->
