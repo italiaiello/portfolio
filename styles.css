@@ -1,10 +1,10 @@
 body {
     margin: 0;
-    font-family: "Source Sans Pro";
+    font-family: "Source Sans Pro", "Helvetica Nueue";
 }
 
 h1, h2, h3 {
-    font-family: Montserrat;
+    font-family: Montserrat, "Helvetica Nueue";
 }
 
 header {
@@ -789,6 +789,10 @@ footer figure img {
     
     .insideDesc h3 {
         margin-top: 15px;
+    }
+    
+    .desc:active :not(img) {
+        opacity: 1;
     }
     
     #Resume {
