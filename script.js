@@ -9,10 +9,9 @@ const fadeOut = (element) => {
 }
 
 const toggle_visibility = (id) => {
-    
-    const descriptionDiv = document.getElementById(id);
-    
+    console.log(id);
     if (window.innerWidth < 1050) {
+        const descriptionDiv = document.getElementById(id);
         if (descriptionDiv.className.indexOf('hide') !== -1) {
             fadeIn(descriptionDiv);
         } else {
