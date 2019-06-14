@@ -433,6 +433,21 @@ footer figure img {
         height: 88.5px;
     }
     
+    #instructions {
+        width: 90%;
+        font-size: 1em;
+        margin-bottom: 20px;
+        display: none;
+        
+    }
+    
+    #instructionsMobile {
+        width: 90%;
+        font-size: 1em;
+        margin-bottom: 20px;
+        display: block;
+    }
+    
     #projectContainer {
         width: 90%;
     }
@@ -533,6 +548,21 @@ footer figure img {
         height: 60px;
     }
     
+    #instructions {
+        width: 90%;
+        font-size: 1em;
+        margin-bottom: 20px;
+        display: none;
+        
+    }
+    
+    #instructionsMobile {
+        width: 90%;
+        font-size: 1em;
+        margin-bottom: 20px;
+        display: block;
+    }
+    
     #projectContainer {
         width: 90%;
     }
@@ -619,6 +649,21 @@ footer figure img {
         height: 50px;
     }
     
+    #instructions {
+        width: 90%;
+        font-size: 1em;
+        margin-bottom: 20px;
+        display: none;
+        
+    }
+    
+    #instructionsMobile {
+        width: 90%;
+        font-size: 1em;
+        margin-bottom: 20px;
+        display: block;
+    }
+    
     #projectSection {
         background: url(Images/paper_mobile.jpg) no-repeat center;
         background-size: cover;
@@ -702,6 +747,21 @@ footer figure img {
     
     .details figure {
         width: 90%;
+    }
+    
+    #instructions {
+        width: 90%;
+        font-size: 1em;
+        margin-bottom: 20px;
+        display: none;
+        
+    }
+    
+    #instructionsMobile {
+        width: 90%;
+        font-size: 1em;
+        margin-bottom: 20px;
+        display: block;
     }
     
     #projectContainer {
