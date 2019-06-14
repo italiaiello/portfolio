@@ -785,14 +785,15 @@ footer figure img {
     
     .insideDesc {
         font-size: 0.65em;
+        opacity: 1;
+    }
+    
+    .desc {
+        opacity: 1;
     }
     
     .insideDesc h3 {
         margin-top: 15px;
-    }
-    
-    .desc:active :not(img) {
-        opacity: 1;
     }
     
     #Resume {

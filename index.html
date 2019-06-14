@@ -48,9 +48,9 @@
                <p id="instructions">Hover over the images to learn more</p>
                <article id="projectContainer">
                     <article class="project">
-                        <figure class="projectImage desc">
+                        <figure class="projectImage desc" onclick="toggle_visibility('description')">
                             <img src="Images/smart_brain.png" alt="Smart brain app detecting faces in a team photo"/>
-                            <div class="insideDesc">
+                            <div id="description" class="insideDesc">
                                 <h3>Smart Brain</h3>
                                 <p>
                                     Paste the link of an image into the detection box, and the app will detect the faces in the image.
@@ -65,9 +65,9 @@
                         </figure>
                     </article>
                     <article class="project">
-                        <figure class="projectImage desc">
+                        <figure class="projectImage desc" onclick="toggle_visibility('description2')">
                             <img src="Images/football_round_up.png" alt="Football Round-Up start screen"/>
-                            <div class="insideDesc">
+                            <div id="description2" class="insideDesc">
                                 <h3>Football Round-Up</h3>
                                 <p>
                                     Find up to date details about leagues and clubs from around the world!
@@ -82,9 +82,9 @@
                         </figure>
                     </article>
                    <article class="project">
-                        <figure class="projectImage desc">
+                        <figure class="projectImage desc" onclick="toggle_visibility('description3')">
                             <img src="Images/Ofrenda.JPG" alt="Football Round-Up start screen"/>
-                            <div class="insideDesc">
+                            <div id="description3" class="insideDesc">
                                 <h3>Day of the Dead VR App</h3>
                                 <p>
                                     Experience the Day of the Dead festival through virtual reality!
@@ -116,6 +116,7 @@
             <a href="https://www.linkedin.com/in/andrew-aiello-9aa21417a/" target="_blank"><img src="Icons/linkedin.svg" alt="Linkedin Logo" /></a>
         </figure>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
 
