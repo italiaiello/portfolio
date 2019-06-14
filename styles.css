@@ -14,7 +14,7 @@ header {
     height: 300px;
     position: relative;
     background-color: #328392;
-    background: url(Images/andyone-26591-unsplash.jpg) no-repeat center;
+    background: url(Images/header.jpg) no-repeat center;
     background-size: cover;
 }
 
@@ -578,6 +578,7 @@ footer figure img {
     header {
         height: 200px;
         font-size: 0.7em;
+        background: url(Images/headerMobile.jpg) no-repeat center;
     }
     
     #overlay {
@@ -615,6 +616,11 @@ footer figure img {
     .details figure img {
         width: auto;
         height: 50px;
+    }
+    
+    #projectSection {
+        background: url(Images/paper_mobile.jpg) no-repeat center;
+        background-size: cover;
     }
     
     #projectsHeading {
@@ -724,6 +730,7 @@ footer figure img {
         margin-bottom: 20px;
         height: 200px;
         font-size: 0.7em;
+        background: url('Images/headerMobile.jpg') no-repeat center;
     }
     
     #overlay {
