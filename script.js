@@ -1,11 +1,22 @@
-const toggle_visibility = (id) => {
-    if (window.innerWidth < 1050) {
-       var e = document.getElementById(id);
-       if (e.style.display == 'block') {
-          e.style.display = 'none';
+const fadeIn = (element) => {
+   element.classList.add('show');
+   element.classList.remove('hide');
+}
 
-       } else {
-          e.style.display = 'block';
-       }
+const fadeOut = (element) => {
+  element.classList.add('hide');
+  element.classList.remove('show');
+}
+
+const toggle_visibility = (id) => {
+    
+    const descriptionDiv = document.getElementById(id);
+    
+    if (window.innerWidth < 1050) {
+        if (descriptionDiv.className.indexOf('hide') !== -1) {
+            fadeIn(descriptionDiv);
+        } else {
+            fadeOut(descriptionDiv);
+        }
     }
 }
