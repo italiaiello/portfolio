@@ -261,6 +261,35 @@ header h1 {
     margin: 0 auto;
 }
 
+#mailMe {
+    text-align: center;
+}
+
+#mailMe p {
+    margin-top: 5px;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+    color: #328392;
+    font-weight: 600;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #328392;
+}
+
+#mailImage {
+    margin: 10px;
+    width: 65px;
+    height: auto;
+    transition: all .2s ease-in-out;
+}
+
+#mailImage:hover {
+    transform: scale(1.05, 1.05);
+}
+
+#mailImage:active {
+    transform: scale(0.95, 0.95);
+}
+
 #viewResume {
     width: 150px;
     height: 40px;
@@ -404,6 +433,17 @@ footer figure img {
     .tryItButton {
         height: 80px;
         font-size: 0.7em;
+    }
+    
+    #mailMe p {
+        font-size: 1.8em;
+        padding-bottom: 40px;
+        margin-bottom: 45px;
+    }
+    
+    #mailImage {
+        width: 150px;
+        height: auto;
     }
     
     #viewResume {
@@ -948,7 +988,7 @@ footer figure img {
     }
     
     .tryIt a {
-        width: 35%;
+        width: 37%;
     }
     
     .tryItButton {
