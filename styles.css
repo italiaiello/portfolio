@@ -118,6 +118,63 @@ h3 {
 
 /* Product Areas & Technologies */
 
+#productAreas-technologies {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
+#productAreas, #technologies {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#productAreas {
+    width: 50%;
+}
+
+#productAreas figure {
+    width: 30%;
+    height: auto;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#productAreas figure img {
+    height: 70px;
+    width: auto;
+}
+
+#technologies {
+    width: 50%;
+}
+
+#technologies figure {
+    width: 20%;
+    height: auto;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#technologies figure img {
+    height: 50px;
+    width: auto;
+}
+
+
 
 
 /* Featured Project */
