@@ -50,15 +50,25 @@ header h1 {
     color: white;
 }
 
-.sectionHeading {
-    border-bottom: 2px solid #328392;
+h2, h3 {
     width: 60%;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 50px;
     padding: 15px 0;
+}
+
+.sectionHeading {
+    border-bottom: 2px solid #328392;
     color: #328392;
 }
+
+h3 {
+    width: 60%;
+    color: #5b9ca8;
+
+}
+
 /* About Me Section */
 
 #aboutSection {
@@ -72,6 +82,11 @@ header h1 {
     justify-content: space-between;
     align-content: center;
     margin-top: 50px;
+}
+
+#bio {
+    width: 60%;
+    margin: 0 auto;
 }
 
 .details {
@@ -101,9 +116,17 @@ header h1 {
     font-weight: 600;
 }
 
+/* Product Areas & Technologies */
+
+
+
+/* Featured Project */
+
+
+
 /* Project Showcase */
 
-#projectSection {
+/* #projectSection {
     background: url(Images/paper.jpg) no-repeat center;
     background-size: cover;
 }
@@ -111,7 +134,7 @@ header h1 {
 #overlaySection {
     background: rgba(50, 131, 146, .7);
     padding: 50px 0;
-}
+} */
 
 #instructions {
     width: 50%;
