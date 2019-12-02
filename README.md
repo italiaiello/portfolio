@@ -1,3 +1,3 @@
 # My Portfolio Site
 
-Created a portfolio site so I can showcase the projects I have worked on
+This website showcases a featured project that I have worked on
