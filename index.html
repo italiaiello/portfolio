@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <header>
-    <div id="overlay">
+    <div id="overlayHeader">
         <figure id="profilePic">
             <img src="Images/Asset%203.png" alt="Picture of me in front of a plant" />
         </figure>
@@ -60,150 +60,325 @@
         </article>
     </section>
 
-    <section id="productAreas-technologies">
+    <section>
+
+    </section>
+
+    <!-- <section id="productAreas-technologies">
         <article id="productAreas">
-            <figure>
-                <img src="Icons/Product Area Icons/globe-line-option.svg" alt="HTML5 Logo" />
-                <p>Web</p>
-            </figure>
-            <figure>
-                <img src="Icons/Product Area Icons/Android_robot.svg" alt="Android Logo" />
-                <p>Android</p>
-            </figure>
-            <figure>
-                <img src="Icons/Product Area Icons/virtual-reality.svg" alt="Virtual Reality Logo" />
-                <p>Virtual Reality</p>
-            </figure>
-            <figure>
-                <img src="Icons/Product Area Icons/augmented-reality.svg" alt="Augmented Reality Logo" />
-                <p>Augmented Reality</p>
-            </figure>
-            <figure>
-                <img src="Icons/Product Area Icons/noun_Artificial Intelligence_1869984.svg" alt="Artificial Intelligence Logo" />
-                <p>Artificial Intelligence</p>
-            </figure>
+            <h2>Product Areas</h2>
+            <article id="productAreas-images">
+                <figure>
+                    <img src="Icons/Product Area Icons/globe-line-option.svg" alt="HTML5 Logo" />
+                    <p>Web</p>
+                </figure>
+                <figure>
+                    <img src="Icons/Product Area Icons/Android_robot.svg" alt="Android Logo" />
+                    <p>Android</p>
+                </figure>
+                <figure>
+                    <img src="Icons/Product Area Icons/virtual-reality.svg" alt="Virtual Reality Logo" />
+                    <p>Virtual Reality</p>
+                </figure>
+                <figure>
+                    <img src="Icons/Product Area Icons/augmented-reality.svg" alt="Augmented Reality Logo" />
+                    <p>Augmented Reality</p>
+                </figure>
+                <figure>
+                    <img src="Icons/Product Area Icons/noun_Artificial Intelligence_1869984.svg" alt="Artificial Intelligence Logo" />
+                    <p>Artificial Intelligence</p>
+                </figure>
+            </article>
         </article>
         <article id="technologies">
-            <figure>
-                <img src="Icons/Technical Icons/HTML5_logo.svg" alt="HTML5 Logo" />
-            </figure>
-            <figure>
-                <img src="Icons/Technical Icons/CSS3_logo.svg" alt="CSS3 Logo" />
-            </figure>
-            <figure>
-                <img src="Icons/Technical Icons/JavaScript_logo.svg" alt="Javascript Logo" />
-            </figure>
-            <figure>
-                <img src="Icons/Technical Icons/Illustrator_icon.svg" alt="Adobe Illustrator Logo" />
-            </figure>
-            <figure>
-                <img src="Icons/Technical Icons/InDesign_icon.svg" alt="Adobe InDesign Logo" />
-            </figure>
-            <figure>
-                <img src="Icons/Technical Icons/invision.svg" alt="Invision Logo" />
-            </figure>
-            <figure>
-                <img src="Icons/Technical Icons/Sketch_Logo.svg"  alt="Sketch Logo"/>
-            </figure>
-            <figure>
-                <img src="Icons/Technical Icons/Asset 1.svg" alt="Unity Logo" />
-            </figure>
-            <figure>
-                <img src="Icons/Technical Icons/vuforia.svg" alt="Unity Logo" />
-            </figure>
-            <figure>
-                <img src="Icons/Technical Icons/visual-studio-code-1.svg" alt="Visual Studio Logo" />
-            </figure>
-            <figure>
-                <img src="Icons/Technical Icons/react.svg" alt="React Logo" />
-            </figure>
-            <figure>
-                <img src="Icons/Technical Icons/Node.js_logo.svg" alt="Node.js Logo" />
-            </figure>
+            <h2>Product Areas</h2>
+            <article id="technologies-images">
+                <figure>
+                    <img src="Icons/Technical Icons/HTML5_logo.svg" alt="HTML5 Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/CSS3_logo.svg" alt="CSS3 Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/JavaScript_logo.svg" alt="Javascript Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/Illustrator_icon.svg" alt="Adobe Illustrator Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/InDesign_icon.svg" alt="Adobe InDesign Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/invision.svg" alt="Invision Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/Sketch_Logo.svg"  alt="Sketch Logo"/>
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/Asset 1.svg" alt="Unity Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/vuforia.svg" alt="Unity Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/visual-studio-code-1.svg" alt="Visual Studio Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/react.svg" alt="React Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/Node.js_logo.svg" alt="Node.js Logo" />
+                </figure>
+            </article>
         </article>
-    </section>
+    </section> -->
    
     <section id="projects" class="overlaySection">
-       
-        <h2 id="projectsHeading" class="sectionHeading">Projects</h2>
         <section id="projectSection">
-           <div id="overlaySection">
-               <p id="instructions">Hover over the images to learn more</p>
-               <p id="instructionsMobile">Click on the images to learn more</p>
-               <article id="projectContainer">
-                    <article class="project">
-                        <figure class="projectImage desc" onclick="toggle_visibility('description')">
-                            <img src="Images/smart_brain.png" alt="Smart brain app detecting faces in a team photo"/>
-                            <div id="description" class="insideDesc hide">
-                                <h3>Smart Brain</h3>
-                                <p>
-                                    Paste the link of an image into the detection box, and the app will detect the faces in the image.
-                                    <br /><br />
-                                    Made using the Clarifai Face Recognition API, React.js, Node.js, Redis and Docker.
-                                    <br /><br />
-                                    Try it for yourself! Click the buttons below to download the repositories.
-                                </p>
-                                <div class="tryIt">
-                                    <a href="https://github.com/italiaiello/smart-brain" target="_blank"><button class="tryItButton">Front-End</button></a>
-                                    <a href="https://github.com/italiaiello/smart-brain-api-1" target="_blank"><button class="tryItButton">Back-End</button></a>
-                                </div>
-                            </div>
-                        </figure>
-                    </article>
-                    <article class="project">
-                        <figure class="projectImage desc" onclick="toggle_visibility('description2')">
-                            <img src="Images/football_round_up.png" alt="Football Round-Up start screen"/>
-                            <div id="description2" class="insideDesc hide">
-                                <h3>Football Round-Up</h3>
-                                <p>
-                                    Find up to date details about leagues and clubs from around the world!
-                                    <br /><br />
-                                    Made using the SportsDB API, React.js and Node.js.
-                                    <br /><br />
-                                    Try it yourself! Click the buttons below to download the repositories.
-                                </p>
-                                <div class="tryIt">
-                                    <a href="https://github.com/italiaiello/football-round-up" target="_blank"><button class="tryItButton">Front-End</button></a>
-                                    <a href="https://github.com/italiaiello/football-round-up-api" target="_blank"><button class="tryItButton">Back-End</button></a>
-                                </div>                                
-                            </div>
-                        </figure>
-                    </article>
-                   <article class="project">
-                        <figure class="projectImage desc" onclick="toggle_visibility('description3')">
-                            <img src="Images/Ofrenda.JPG" alt="Football Round-Up start screen"/>
-                            <div id="description3" class="insideDesc hide">
-                                <h3>Day of the Dead VR App</h3>
-                                <p>
-                                    Experience the Day of the Dead festival through virtual reality!
-                                    <br /><br />
-                                    Try it for yourself! (Only compatible with Android devices)
-                                </p>
-                                <div class="tryIt">
-                                    <a href="https://drive.google.com/file/d/1wcfpb3pVa9sO-aSRM8coC3d5-QraoPYd/view?usp=sharing" target="_blank"><button class="tryItButton">Download VR App</button></a>
-                                </div> 
-                            </div>
-                        </figure>
-                    </article>
-                   </article>
-               </article>
-               </div>
+           <div class="overlay">
+               <section id="productAreas-technologies">
+            <article id="productAreas">
+                <h3>Product Areas</h3>
+                <article id="productAreas-images">
+                    <figure>
+                        <img src="Icons/Product Area Icons/globe-line-option.svg" alt="HTML5 Logo" />
+                        <p>Web</p>
+                    </figure>
+                    <figure>
+                        <img src="Icons/Product Area Icons/Android_robot.svg" alt="Android Logo" />
+                        <p>Android</p>
+                    </figure>
+                    <figure>
+                        <img src="Icons/Product Area Icons/virtual-reality.svg" alt="Virtual Reality Logo" />
+                        <p>Virtual Reality</p>
+                    </figure>
+                    <figure>
+                        <img src="Icons/Product Area Icons/augmented-reality.svg" alt="Augmented Reality Logo" />
+                        <p>Augmented Reality</p>
+                    </figure>
+                    <figure>
+                        <img src="Icons/Product Area Icons/noun_Artificial Intelligence_1869984.svg" alt="Artificial Intelligence Logo" />
+                        <p>Artificial Intelligence</p>
+                    </figure>
+                </article>
+            </article>
+            <article id="technologies">
+                <h3 id="tech-mobile">Technologies</h3>
+                <article id="technologies-images">
+                    <figure>
+                        <img src="Icons/Technical Icons/HTML5_logo.svg" alt="HTML5 Logo" />
+                    </figure>
+                    <figure>
+                        <img src="Icons/Technical Icons/CSS3_logo.svg" alt="CSS3 Logo" />
+                    </figure>
+                    <figure>
+                        <img src="Icons/Technical Icons/JavaScript_logo.svg" alt="Javascript Logo" />
+                    </figure>
+                    <figure>
+                        <img src="Icons/Technical Icons/Illustrator_icon.svg" alt="Adobe Illustrator Logo" />
+                    </figure>
+                    <figure>
+                        <img src="Icons/Technical Icons/InDesign_icon.svg" alt="Adobe InDesign Logo" />
+                    </figure>
+                    <figure>
+                        <img src="Icons/Technical Icons/invision.svg" alt="Invision Logo" />
+                    </figure>
+                    <figure>
+                        <img src="Icons/Technical Icons/Sketch_Logo.svg"  alt="Sketch Logo"/>
+                    </figure>
+                    <figure>
+                        <img src="Icons/Technical Icons/Asset 1.svg" alt="Unity Logo" />
+                    </figure>
+                    <figure>
+                        <img src="Icons/Technical Icons/vuforia.svg" alt="Unity Logo" />
+                    </figure>
+                    <figure>
+                        <img src="Icons/Technical Icons/visual-studio-code-1.svg" alt="Visual Studio Logo" />
+                    </figure>
+                    <figure>
+                        <img src="Icons/Technical Icons/react.svg" alt="React Logo" />
+                    </figure>
+                    <figure>
+                        <img src="Icons/Technical Icons/Node.js_logo.svg" alt="Node.js Logo" />
+                    </figure>
+                </article>
+            </article>
         </section>
+    </section>
+
+    <section id="projectShowcase">
+        <h2 id="projectsHeading" class="sectionHeading">Projects</h2>
+        <h3>NERVI 360</h3>
+        <h4>Mixed Reality Exploration of NERVI’s Architecture</h4>
+        <article class="projectDetails">
+
+            <article class="projectImage">
+                <figure>
+                    <img src="Images/Nervi.JPG" alt="Person using a virtual reaity headset" />
+                </figure>
+            </article>
+            <article class="projectDescription">
+                <p>
+                    This project was a part of The Exhibition Sydney, which was held at the Tin Sheds Gallery in the University of Sydney, and later at 
+                    Australia Square. This exhibition was dedicated to the architectural work of Pier Luigi Nervi, showing off his designs in a variety 
+                    of different ways.
+                    <br><br>
+                    I worked in a group of three to complete the project, and my involvement was in the creation of the Virtual and Augmented Reality applications.
+                    <br><br>
+                    For the Virtual Reality project, I used Unity and C# to allow users to experience being inside the Palazzetto dello Sport. The user 
+                    is able to explore the venue and admire the beautiful architecture that Nervi designed.
+                    <br><br>
+                    Moreover, the Augmented Reality project had three buildings that the user could interact with. They had the option to either, 
+                    explode (show what elements make up the building), spin, or create a cross-section of the building.
+                </p>
+            </article>
+            <article class="projectLogos">
+                <figure>
+                    <img src="Icons/Technical Icons/Asset 1.svg" alt="Unity Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/visual-studio-code-1.svg" alt="Visual Studio Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/vuforia.svg" alt="Vuforia Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Product Area Icons/Android_robot.svg" alt="Android Logo" />
+                </figure>
+                <figure>
+                        <img src="Icons/Technical Icons/htc-vive-logo.svg" alt="HTC Vive Logo" />
+                    </figure>
+            </article>
+        </article>
+        <article class="centerButton">
+            <a href="https://drive.google.com/file/d/17XE1VcOwG6kXTZkM0CVwpQueb1DtnB-V/view?usp=sharing" target="_blank"><button class="projectButton">Download APK</button></a>
+        </article> 
+        <hr />
+
+        <h3>Smart Brain</h3>
+        <h4>Facial Recognition Application</h4>
+        <article class="projectDetails">
+            <article class="projectImage">
+                <figure>
+                    <img src="Images/smart-brain.png" alt="Smart Brain application in action" />
+                </figure>
+            </article>
+            <article class="projectDescription">
+                <p>
+                    I wanted to learn how to us the React.js library, and so I followed a great Udemy course taught by Andrei Neagoie. In order to grasp 
+                    the different aspects of the library, I was led through the process of how to build an application that recognises the faces of 
+                    people in an image.
+                    <br><br>
+                    To do this, an API called Clarifai was required to do the heavy lifting of the facial recognition. The rest of the job was mainly 
+                    about making sure an image could be correctly inputted for analysis by the API.
+                    <br><br>
+                    I also learned how to implement the back-end of an application using a variety of different tools, such as PSequel, Docker and Redis.
+                    This was my first exposure to creating a full stack application, and it was amazing to see how the database side of applications is 
+                    established.
+                    <br><br>
+                </p>
+            </article>
+            <article class="projectLogos">
+                <figure>
+                    <img src="Icons/Technical Icons/react.svg" alt="React Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/Node.js_logo.svg" alt="Node JS Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/visual-studio-code-1.svg" alt="Visual Studio Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/PSequel.png" alt="PSequel Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/Docker_logo.svg" alt="Docker Logo" />
+                </figure>
+                <figure>
+                        <img src="Icons/Technical Icons/redis-seeklogo.com.svg" alt="Redis Logo" />
+                    </figure>
+            </article>
+        </article>
+        <article id="smart-brain" class="centerButton">
+            <a href="https://github.com/italiaiello/facerecognitionbrain" target="_blank"><button class="projectButton">Download Front-End</button></a>
+            <a href="https://github.com/italiaiello/smart-brain-api" target="_blank"><button class="projectButton">Download Back-End</button></a>
+        </article> 
+        <hr />
+
+        <h3>Day of the Dead VR</h3>
+        <h4>Learn about the Day of the Dead festival through a virtual reality experience</h4>
+        <article class="projectDetails">
+            <article class="projectImage">
+                <figure>
+                    <img src="Images/DotD.JPG" alt="Smart Brain application in action" />
+                </figure>
+            </article>
+            <article class="projectDescription">
+                <p>
+                        This was a group project that I worked on for university. Our brief was to use VR to create an informative and/or social experience. 
+                        We decided to focus on the Mexican festival known as the Day of the Dead, as we thought it was quite interesting and it would be fun 
+                        to try and replicate certain aspects of it in a virtual space.
+                        <br><br>
+                        The user is guided through different stages, and each stage has a new set of objectives for the user to accomplish. By completing 
+                        these objectives, more information about the festival can be uncovered. When the user has completed the experience, they will 
+                        understand the fundamental aspects that make up the Day of the Dead festival.
+                        <br><br>
+                        Unity was used in conjunction with the Google VR package to create the virtual environment, and C# was used to code the interactions 
+                        throughout the experience. We used 3Ds Max to model some of the objects in the scene, with some being imported from the Unity Assets 
+                        store.
+                        <br><br>
+                        Making the user read a bunch of textual information in VR isn’t the best for immersion, so we created a journey companion that 
+                        follows the user throughout the experience. The companion is a decorated skull, as shown in the image, which is one of the more 
+                        prominent elements of the festival.
+                        
+                </p>
+            </article>
+            <article class="projectLogos">
+                <figure>
+                    <img src="Icons/Technical Icons/react.svg" alt="React Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/Node.js_logo.svg" alt="Node JS Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/visual-studio-code-1.svg" alt="Visual Studio Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/PSequel.png" alt="PSequel Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/Docker_logo.svg" alt="Docker Logo" />
+                </figure>
+                <figure>
+                    <img src="Icons/Technical Icons/redis-seeklogo.com.svg" alt="Redis Logo" />
+                </figure>
+            </article>
+        </article>
+        <article id="smart-brain" class="centerButton">
+            <a href="https://drive.google.com/file/d/1z1o1_ot0W0Ik9GLFsQ5pq2Fo3wgmPsrr/view?usp=sharing" target="_blank"><button class="projectButton">Download iOS Build</button></a>
+            <a href="https://drive.google.com/file/d/1UIdNgtkDCkNSjTqX8c33MSWegHLQjP4G/view?usp=sharing" target="_blank"><button class="projectButton">Download APK</button></a>
+        </article> 
+        <hr />
+
     </section>
     
     <section id="Resume">
-       <h2 class="sectionHeading">Contact</h2>
-        <article>
-            <div id="mailMe">
-                <figure id="mailImage"><a href="mailto:andrewaiello7@gmail.com"><img src="Icons/Mail.svg" alt="Mail icon" width="100%" height="auto"/></a></figure>
-                <p>Email Me</p>
-            </div>
-            <a href="https://drive.google.com/file/d/1lL3GNtQklSrknsNCosehlvsdGYGCPzVP/view?usp=sharing" target="_blank"><button id="viewResume">View Resume</button></a>
-            <figure id="logo">
-                <img src="Icons/Logo.svg" alt="Logo which resembles the letter A"/>
-            </figure>  
-        </article>
+        <div class="overlay">
+            <h2 class="sectionHeading">Contact</h2>
+            <article>
+                <div id="mailMe">
+                    <figure id="mailImage"><a href="mailto:andrewaiello7@gmail.com"><img src="Icons/Mail_white.svg" alt="Mail icon" width="100%" height="auto"/></a></figure>
+                    <p>Email Me</p>
+                </div>
+                <a href="https://drive.google.com/file/d/1lL3GNtQklSrknsNCosehlvsdGYGCPzVP/view?usp=sharing" target="_blank"><button id="viewResume">View Resume</button></a>
+            </article>
+        </div>
     </section>
+    <article id="logo">
+        <figure>
+            <img src="Icons/Logo.svg" alt="Logo which resembles the letter A"/>
+        </figure>
+    </article>
     <footer>
         <figure>
             <a href="https://github.com/italiaiello" target="_blank"><img src="Icons/github.svg" alt="Github Logo" /></a>
@@ -215,8 +390,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-<!--
-<section id="projectSection">
-           <div id="overlaySection">
--->

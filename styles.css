@@ -3,8 +3,8 @@ body {
     font-family: "Source Sans Pro", "Avenir";
 }
 
-h1, h2, h3 {
-    font-family: Montserrat, "Avenir";
+h1, h2, h3, h4, p {
+    font-family: Montserrat, Avenir;
 }
 
 header {
@@ -18,7 +18,7 @@ header {
     background-size: cover;
 }
 
-#overlay {
+#overlayHeader {
     position: absolute;
     top: 0;
     left: 0;
@@ -50,7 +50,7 @@ header h1 {
     color: white;
 }
 
-h2, h3 {
+h2, h3, h4 {
     width: 60%;
     text-align: center;
     margin: 0 auto;
@@ -63,7 +63,7 @@ h2, h3 {
     color: #328392;
 }
 
-h3 {
+h3, h4 {
     width: 60%;
     color: #5b9ca8;
 
@@ -78,6 +78,7 @@ h3 {
 #aboutContainer {
     width: 60%;
     margin: 0 auto;
+    margin-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -118,31 +119,51 @@ h3 {
 
 /* Product Areas & Technologies */
 
+#projectSection {
+    background: url(Images/paper.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.overlay {
+    background: rgba(50, 131, 146, .7);
+    padding: 50px 0;
+}
+
 #productAreas-technologies {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    
+}
+
+#productAreas-technologies h3 {
+    color: white;
 }
 
 #productAreas, #technologies {
+    color: white;
     margin: 0 auto;
-    margin-bottom: 100px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Bookmark 2 */
+
+#productAreas {
+    width: 50%;
+}
+
+#productAreas-images {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
-#productAreas {
-    width: 50%;
-}
-
-#productAreas figure {
+#productAreas-images figure {
     width: 30%;
     height: auto;
     margin: 20px 0;
@@ -152,7 +173,7 @@ h3 {
     align-items: center;
 }
 
-#productAreas figure img {
+#productAreas-images figure img {
     height: 70px;
     width: auto;
 }
@@ -161,7 +182,15 @@ h3 {
     width: 50%;
 }
 
-#technologies figure {
+#technologies-images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#technologies-images figure {
     width: 20%;
     height: auto;
     margin: 20px;
@@ -169,168 +198,142 @@ h3 {
     justify-content: center;
 }
 
-#technologies figure img {
+#technologies-images figure img {
     height: 50px;
     width: auto;
 }
 
 
 
+/* Projects */
 
-/* Featured Project */
-
-
-
-/* Project Showcase */
-
-/* #projectSection {
-    background: url(Images/paper.jpg) no-repeat center;
-    background-size: cover;
+#projectsHeading {
+    margin-top: 100px;
 }
 
-#overlaySection {
-    background: rgba(50, 131, 146, .7);
-    padding: 50px 0;
-} */
-
-#instructions {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.1em;
-    margin-bottom: 50px;
-    color: white;
-}
-
-#instructionsMobile {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.1em;
-    margin-bottom: 50px;
-    color: white;
-    display: none;
-}
-
-#projectContainer {
-    width: 80%;
-    height: auto;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.project {
-    width: 35%;
-    height: auto;
-    display: flex;
-    margin: 5px;
+#projectShowcase h3, #projectShowcase h4 {
     margin-bottom: 0;
+    width: 80%;
 }
 
-.projectImage {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-
-.desc {
-    
-    position: relative;
-    transition: .3s;
-}
-
-.desc img {
-    width: 100%;
-    height: 100%;
-    transition: all .3s ease-in-out;
-    border-radius: 4px;
-}
-
-.insideDesc {
-    position: absolute;
-    z-index: 1;
-    top: 0%;
-    width: 100%;
-    height: 99%;
-    color: #fff;
-    opacity: 0;
-    transition: .3s;
-    background: rgba(0, 0, 0, 0.85);
-    border-radius: 4px;
-}
-
-.insideDesc h3 {
-    text-align: center;
-    color: white;
+.projectDetails {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
     margin-top: 20px;
 }
 
-.insideDesc p {
-    width: 80%;
-    margin: 0 auto;
-    font-size: 0.9em;
-}
-
-.desc:hover :not(img) {
-    opacity: 1;
-}
-
-.tryIt {
-    width: 90%;
+.projectImage {
+    width: 50%;
     height: auto;
-    margin: 10px auto;
+}
+
+.projectImage figure {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.projectImage figure img {
+    width: 100%;
+    height: auto;
+}
+
+.projectDescription {
+    width: 50%;
+    height: auto;
+    background: white;
+    border-right: 5px solid #328392;
+    box-sizing: border-box;
+}
+
+.projectDescription h4 {
+    padding-top: 0;
+}
+
+.projectDescription p {
+    font-size: 15px;
+    line-height: 25px;
+    width: 90%;
+    margin: auto auto;
+}
+
+.projectLogos {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.projectLogos figure {
+    width: 10%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.projectLogos figure img {
+    width: auto;
+    height: 35px;
+}
+
+.centerButton {
     display: flex;
     justify-content: center;
+    margin-top: 30px;
 }
 
-.tryIt a {
-    width: 35%;
-    margin: 0 10px;
-}
-
-.tryItButton {
-    width: 100%;
+.projectButton {
+    width: 150px;
     height: 40px;
-    border: 2px solid #328392;
     border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid #328392;
     color: #328392;
     font-weight: bolder;
     transition: all .2s ease-in-out;
     outline: none;
     background-color: white;
-    cursor: pointer;
-    transition: all .2s ease-in-out;
+    margin: 0 auto;
 }
 
-.tryItButton:hover {
+.projectButton:hover {
     transform: scale(1.05, 1.05);
     background-color: #328392;
     color: white;
 }
 
-.tryButton:active {
+.projectButton:active {
     transform: scale(0.95, 0.95);
 }
 
-    /* Classes used in JS file to fade div in and out on click */
-
-.hide {
-    opacity: 0;
-    transition: opacity 650ms;
+#smart-brain a {
+    margin: 0 10px;
 }
 
-.show {
-    opacity: 1;
-    transition: opacity 650ms;
+hr {
+    width: 20%;
+    border: 3px solid #328392;
+    margin: 50px auto;
 }
 
 /* Resume */
 
 #Resume {
     margin: 100px 0px;
+    background: url(Images/wood.jpg) no-repeat center;
+    background-size: cover;
+}
+
+#Resume h2 {
+    color: white;
+    border-bottom: 2px solid white;
 }
 
 #Resume article {
@@ -349,10 +352,10 @@ h3 {
     margin-top: 5px;
     margin-bottom: 25px;
     font-size: 0.9em;
-    color: #328392;
+    color: white;
     font-weight: 600;
     padding-bottom: 20px;
-    border-bottom: 1px solid #328392;
+    border-bottom: 1px solid white;
 }
 
 #mailImage {
@@ -375,18 +378,18 @@ h3 {
     height: 40px;
     border-radius: 4px;
     cursor: pointer;
-    border: 2px solid #328392;
-    color: #328392;
+    border: 2px solid white;
+    color: white;
     font-weight: bolder;
     transition: all .2s ease-in-out;
     outline: none;
-    background-color: white;
+    background-color: #328392;
 }
 
 #viewResume:hover {
     transform: scale(1.05, 1.05);
-    background-color: #328392;
-    color: white;
+    background-color: white;
+    color: #328392;
 }
 
 #viewResume:active {
@@ -398,12 +401,17 @@ h3 {
 }
 
 #logo {
-    width: 100px;
-    height: auto;
-    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#logo img {
+#logo figure {
+    width: 100px;
+    height: auto;
+}
+
+#logo figure img {
     width: 100%;
     height: auto;
 }
@@ -417,7 +425,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 100px;
 }
 
 footer figure {
@@ -445,6 +453,10 @@ footer figure img {
     /* Larger Screens */
 
 @media screen and (min-width: 2000px) {
+
+    h1, h2, h3, h4, p {
+        font-size: 30px;
+    }
     
     #profilePic {
         width: 300px;
@@ -476,6 +488,7 @@ footer figure img {
     
     #aboutContainer {
         margin-top: 100px;
+        margin-bottom: 200px;
     }
     
     .details {
@@ -491,28 +504,18 @@ footer figure img {
         width: auto;
         height: 100px;
     }
-    
-    #instructions {
-        font-size: 2em;
+
+    #technologies-images figure {
+        margin: 30px;
     }
-    
-    .project {
-        width: 40%;
+
+    #technologies-images figure img {
+        height: 70px;
     }
-    
-    .insideDesc {
-        font-size: 2em;
-        height: 99.5%;
-    }
-    
-    .tryIt a {
-        margin-top: 20px;
-        width: 40%;
-    }
-    
-    .tryItButton {
-        height: 80px;
-        font-size: 0.7em;
+
+    .projectDescription p {
+        font-size: 25px;
+        line-height: 40px;
     }
     
     #mailMe p {
@@ -705,6 +708,10 @@ footer figure img {
         margin-bottom: 70px;
         
     }
+
+    #aboutSection p {
+        line-height: 25px;
+    }
     
     .details {
         font-size: 1.2em;
@@ -718,32 +725,31 @@ footer figure img {
         width: auto;
         height: 60px;
     }
-    
-    #instructions {
-        width: 90%;
-        font-size: 1em;
-        margin-bottom: 20px;
-        display: none;
-        
+
+    #productAreas-technologies {
+        text-align: center;
+        flex-direction: column;
     }
-    
-    #instructionsMobile {
-        width: 90%;
-        font-size: 1em;
-        margin-bottom: 20px;
-        display: block;
+
+    #productAreas, #technologies {
+        width: 80%;
     }
     
     #projectContainer {
         width: 90%;
     }
-    
-    .project {
-        width: 45%;
+
+    .projectImage {
+        width: 80%;
+        margin: 0 auto
     }
-    
-    .insideDesc {
-        font-size: 1em;
+
+    .projectDescription {
+        width: 100%;
+        margin: 30px auto;
+        border: none;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #328392;
     }
     
     #Resume {
@@ -758,7 +764,7 @@ footer figure img {
     }
     
     #logo {
-        width: 12%;
+        width: 100%;
     }
     
     footer {
@@ -774,7 +780,8 @@ footer figure img {
 
 /* Mobiles in landscape view */
 
-@media screen and (max-width: 823px) {
+
+@media screen and (max-width: 823px) { 
     
     header {
         height: 200px;
@@ -783,8 +790,8 @@ footer figure img {
         background-size: cover;
     }
     
-    #overlay {
-        flex-direction: column;
+    #overlayHeader h1 {
+        margin: 0;
     }
 
     #profilePic {
@@ -808,6 +815,7 @@ footer figure img {
     
     .details {
         font-size: 1em;
+        height: 120px;
     }
     
     .details figure {
@@ -819,20 +827,24 @@ footer figure img {
         width: auto;
         height: 50px;
     }
-    
-    #instructions {
-        width: 90%;
-        font-size: 1em;
-        margin-bottom: 20px;
-        display: none;
-        
+
+    #bio p {
+        line-height: 25px;
     }
-    
-    #instructionsMobile {
-        width: 90%;
-        font-size: 1em;
+
+    #productAreas, #technologies {
+        width: 100%;
+    }
+
+    #productAreas-technologies h3 {
         margin-bottom: 20px;
-        display: block;
+    }
+
+    #productAreas figure, #technologies figure {
+        width: 20%;
+        margin: 20px;
+        text-align: center;
+        font-size: 12px;
     }
     
     #projectSection {
@@ -841,24 +853,23 @@ footer figure img {
     }
     
     #projectsHeading {
-        margin-bottom: 40px;
+        margin: 40px auto;
     }
-    
-    .insideDesc {
-        font-size: 0.7em;
+
+    .projectImage {
+        width: 100%;
     }
-    
-    .insideDesc h3 {
-        margin-top: 15px;
+
+    .projectDescription {
+        width: 100%;
+        margin: 30px 0;
+        border: none;
+        padding-bottom: 20px;
+        border-bottom: 3px solid #328392;
     }
-    
-    .tryIt a {
-        width: 40%;
-    }
-    
-    .tryItButton {
-        height: 40px;
-        font-size: 0.7em;
+
+    .projectLogos {
+        width: 100%;
     }
     
     #Resume {
@@ -873,14 +884,17 @@ footer figure img {
         width: 150px;
         height: 50px;
         font-size: 0.8em;
+        color: white;
+        background-color: #328392
     }
-    
-    #logo {
-        width: 12%;
+
+    #logo figure {
+        width: 15%;
     }
     
     footer {
         height: 100px;
+        margin-top: 50px;
     }
     
     footer figure {
@@ -928,20 +942,17 @@ footer figure img {
     .details figure {
         width: 90%;
     }
-    
-    #instructions {
-        width: 90%;
-        font-size: 1em;
-        margin-bottom: 20px;
-        display: none;
-        
+
+    #bio {
+        width: 80%;
     }
-    
-    #instructionsMobile {
-        width: 90%;
-        font-size: 1em;
-        margin-bottom: 20px;
-        display: block;
+
+    #productAreas-technologies h3 {
+        margin-bottom: 50px;
+    }
+
+    #tech-mobile {
+        margin: 30px auto;
     }
     
     #projectContainer {
@@ -952,19 +963,15 @@ footer figure img {
         background: url(Images/paper_portrait.jpg) no-repeat center;
         background-size: cover;
     }
-    
-    .project {
-        width: 80%;
-        font-size: 1.3em;
-    }
-    
-    .insideDesc h3 {
-        font-size: 1.3em;
+
+    .centerButton button {
+        height: 60px;
     }
 }
 
     /* Mobile Phones Portrait */
 
+/* Bookmark */
 @media screen and (max-width: 425px) {
     
     header {
@@ -975,8 +982,9 @@ footer figure img {
         background-size: cover;
     }
     
-    #overlay {
+    #overlayHeader {
         flex-direction: column;
+        text-align: center;
     }
 
     #profilePic {
@@ -997,14 +1005,22 @@ footer figure img {
         margin: 30px 0px;
     }
     
+    #aboutSection h3 {
+        margin-bottom: 20px;
+    }
+
     #aboutContainer {
         margin-top: 20px;
         flex-wrap: wrap;
         width: 70%;
     }
-    
+
     #aboutSection {
         margin-bottom: 50px;
+    }
+
+    #bio {
+        width: 80%;
     }
     
     .sectionHeading {
@@ -1033,26 +1049,17 @@ footer figure img {
         width: auto;
         height: 40px;
     }
+
+    /* Bookmark */
     
     /*  Projects  */
     
-    #instructions {
-        width: 90%;
-        font-size: 1em;
-        margin-bottom: 20px;
-        display: none;
-        
-    }
-    
-    #instructionsMobile {
-        width: 90%;
-        font-size: 1em;
-        margin-bottom: 20px;
-        display: block;
-    }
-    
     #projects h2 {
         margin-bottom: 25px;
+    }
+
+    #projectsHeading {
+        margin-top: 50px;
     }
     
     #projectContainer {
@@ -1062,23 +1069,26 @@ footer figure img {
     .project {
         width: 100%;
     }
-    
-    .insideDesc {
-        font-size: 0.5em;
+
+    .projectLogos {
+        width: 100%;
     }
-    
-    .insideDesc h3 {
-        margin: 10px 0;
+
+    .projectLogos figure {
+        margin: 20px 30px;
     }
-    
-    .tryIt a {
-        width: 37%;
+
+    .centerButton {
+        margin: 50px;
     }
-    
-    .tryItButton {
-        height: 30px;
-        font-size: 0.7em;
+
+    .centerButton button {
+        height: 50px;
     }
+
+
+
+    /* Contact */
     
     #Resume {
         margin: 50px 0;
@@ -1090,18 +1100,44 @@ footer figure img {
     
     #viewResume {
         width: 150px;
+        color: white;
+        background-color: #328392
     }
     
     #logo {
+        width: 100%;
+    }
+
+    #logo figure {
         width: 20%;
     }
     
     footer {
         height: 150px;
+        margin-top: 50px;
     }
     
     footer figure {
         width: 50px;
     }
     
+}
+
+@media screen and (max-width: 320px) {
+
+    .centerButton {
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .centerButton a {
+        width: 80%;
+    }
+
+    .centerButton button {
+        margin: 10px auto;
+        width: 100%;
+        height: 60px;
+    }
 }
