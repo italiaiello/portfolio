@@ -285,6 +285,7 @@ h3, h4 {
 
 .centerButton {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     margin-top: 30px;
 }
@@ -300,7 +301,7 @@ h3, h4 {
     transition: all .2s ease-in-out;
     outline: none;
     background-color: white;
-    margin: 0 auto;
+    margin: 5px;
 }
 
 .projectButton:hover {
