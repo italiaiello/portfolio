@@ -250,6 +250,15 @@ h3, h4 {
     box-sizing: border-box;
 }
 
+.projectDescription a {
+    text-decoration: none;
+    color: #328392;
+}
+
+.projectDescription a:hover {
+    color: rgb(34, 87, 97)
+}
+
 .projectDescription h4 {
     padding-top: 0;
 }
